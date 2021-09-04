@@ -1,0 +1,14 @@
+
+function send(){
+    number_1= document.getElementById("input_number_1").value;
+    number_2= document.getElementById("input_number_2").value;
+    actual_answer= parseInt(number_1) * parseInt(number_2);
+
+    question_number= "<h4>" + number_1 + " X " + number_2 + "</h4>";
+    input_box= "<br>Answer : <input type='text' id='input_check_box'>";
+    check_button= "<br><br><button class='btn btn-info' onclick='check()'>Check</button>"
+    row= question_number + input_box + check_button;
+    document.getElementById("div_output").innerHTML= row;
+    document.getElementById("input_number_1").value= "";
+    document.getElementById("input_number_2").value= "";
+}
